@@ -1,0 +1,74 @@
+.container-fluid {
+  align-items: center;
+background-color: #ffd7e8;
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #866ec7;
+  padding-top: 100px;
+}
+
+h2 {
+background-color:#f2c0ff;
+color: #866ec7;
+text-align: center;
+padding: 15px
+position: relative;
+left: 3500px;
+max-width: 400px;
+}
+
+.input-group {
+  position: relative;
+  left: 350px;
+  max-width: 400px;
+}
+
+}
+.current-button {
+  position: relative;
+  left: 200px;
+  background-color: #f2c0ff;
+  border-color: #f2c0ff;
+  color: #866ec7;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.city {
+  margin: 20px;
+}
+
+.card1 {
+  position: relative;
+  font-size: 30px;
+}
+
+.card-img-top1{
+  font-size: 40px;
+}
+
+.carousel-slide {
+  position: relative;
+  bottom: 88px;
+  left: 300px;
+  max-width: 350px;
+}
+
+.card-mb-3{
+  position: relative;
+  bottom: 300px;
+  left: 800px;

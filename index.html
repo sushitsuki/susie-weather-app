@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Suse's weather page</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=PT+Sans&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  </head>
+
+  <body>
+  <div class="container-fluid">
+    <h1>
+      The Weather App
+    </h1>
+    <br>
+    </form>
+    <form class="row row-cols-lg-auto g-3 align-items-center" id="search-form">
+    <div class="col-3">
+      <button 
+      class="current-button"
+      id="current-button">
+      Current
+      </button>     
+    <div class="col-6">
+      <div class="input-group">
+         <input 
+         type="search" 
+         placeholder="Looking for a city?"
+         autocomplete="off"
+         autofocus="on"
+         id="city-input"
+         class="form-control"/>
+      <div class="col-3">
+        <input 
+        class="city-search"
+        type="submit" 
+        value="search"/>
+      </div>
+    </div>
+  </div>
+        </form>
+        <br>
+        <h2 id="current-city">
+        </h2>
+        <br>
+        <h3 id="date">
+          Thursday,oct 19
+        </h3>
+        <div 
+        class="card1" 
+        style="width: 40rem;">
+            <img src="media/partly-cloud" 
+            class="card-img-top1" 
+            alt="Today's Weather">
+            <div class="card-body">
+              <p class="card-text">
+                <h4 <span id="temp"> 15</span> ºC
+                </h4>
+                <br>
+                  <p class="hour" id="hour">
+                  </p>
+                <br>
+                <ul>
+                  <li>
+                    Humidity:<span id="humidity"></span>%
+                  </li>
+                  <li>
+                    Wind:<span id="wind"></span>km/h
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        <br>
+        <div id="carouselExample" 
+             class="carousel-slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="media/temperature" 
+                class="d-block w-100" 
+                alt="temperature">
+              </div>
+              <div class="carousel-item">
+                <img src="media/percepitation" 
+                class="d-block w-100" 
+                alt="percepitation">
+              </div>
+              <div class="carousel-item">
+                <img src="media/wind" 
+                class="d-block w-100" 
+                alt="wind">
+              </div>
+            </div>
+            <button class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#carouselExample" 
+            data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" 
+              aria-hidden="true">
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" 
+            type="button" 
+            data-bs-target="#carouselExample" 
+            data-bs-slide="next">
+              <span class="carousel-control-next-icon" 
+              aria-hidden="true">
+            </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <br>
+        <div class="card-mb-3">
+          <ul id="forecast">
+            <li id="day1"> 
+              <img src="media/sunny"
+              class="day1-icon"
+              alt="day1-forecast">
+              <h5>Tuesday</h5>
+              <p class="card-text">
+               <strong>24ºC</strong>/13ºC
+              </p>
+            </li>
+            <li id="day2">
+              <img src="media/partly-cloud"
+              class="day2-icon"
+              alt="day2-forecast">
+              <h5>Wednesday</h5>
+              <p class="card-text">
+                <strong>24ºC</strong>/17ºC
+              </p>
+            </li>
+            <li id="day3">
+              <img src="media/weather-hail"
+              class="day3-icon"
+              alt="day3-forecast">
+              <h5>Thursday</h5>
+              <p class="card-text">
+                <strong>21ºC<strong>/14ºC
+              </p>
+            </li>
+            <li id="day4">
+              <img src="media/partly-cloud"
+              class="day4-icon"
+              alt="day4-forecast">
+              <h5>Friday</h5>
+              <p class="card-text">
+                <strong>22ºc</strong>/12ºC
+              </p>
+            </li>
+            <li id="day5">
+              <img src="media/partly-cloud"
+              class="day5-icon"
+              alt="day5-forecast">
+              <h5>Satruday</h5>
+              <p class="card-text">
+                <strong>24ºC</strong>/13ºC
+            </li>
+          </ul>
+        </div>
+        <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="src/index.js"></script>
+   <footer>
+      <p>
+        <center>
+          Coded by Suse Ferreira
+        </center>
+      </p>
+   </footer> 
+  </div>
+  </body>
+
+</html>
