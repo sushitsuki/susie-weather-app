@@ -1,6 +1,8 @@
 .container-fluid {
   align-items: center;
-background-color: #ffd7e8;
+  background-color: #ffd7e8;
+  border: darkorchid;
+  border-radius: 10px;
 }
 
 h1 {
