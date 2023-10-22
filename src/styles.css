@@ -44,8 +44,8 @@ max-width: 400px;
   justify-content: center;
 }
 li {
-  font-size: 28 px;
   list-style: none;
+  font-size: 28 px;
   padding: 0;
   margin: 0;
 }
@@ -70,8 +70,7 @@ li {
   max-width: 200px;
 }
 
-.card-mb-3{
+.weekly-forecast{
   position: relative;
-  bottom: 300px;
-  left: 800px;
+  left: 900 px;
 }
