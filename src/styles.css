@@ -1,38 +1,62 @@
-.container-fluid {
-  align-items: center;
-  background-color: #ffd7e8;
-  border: darkorchid;
-  border-radius: 10px;
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
 }
 
 h1 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-align: center;
-  font-size: 40px;
   color: #866ec7;
   padding-top: 100px;
 }
 
 h2 {
-background-color:#f2c0ff;
-color: #866ec7;
-text-align: center;
-padding: 15px;
 position: relative;
-left: 3500px;
-max-width: 400px;
+right: 250px;
+left: 20px;
+color: #bc99c5;
+padding-top: 35px;
+padding-bottom: 15px;
 }
 
-.input-group {
+h4{
+  color: black;
   position: relative;
-  left: 350px;
-  max-width: 400px;
+  left: 25px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  font-size: 30 px;
+  padding: 0;
+  margin: 0;
+}
+
+.weather-page {
+  max-width: 1000px;
+  margin: 30 auto;
+  padding: 20;
+  border:2px solid #782791 ;
+  border-radius: 15px;
+  background-color: #f1c2d6;
+}
+
+.col-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col {
+padding-right: 0;
+padding-left: 0;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
 .current-button {
-  position: relative;
-  left: 200px;
   background-color: #f2c0ff;
   border-color: #f2c0ff;
   color: #866ec7;
@@ -42,35 +66,17 @@ max-width: 400px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-li {
-  list-style: none;
-  font-size: 28 px;
-  padding: 0;
-  margin: 0;
+  max-width: 400px;
 }
 
-.city {
-  margin: 20px;
+.city-search {
+  background-color: #d59fe2;
+  border-color: #e494f8;
+  color: #866ec7;
 }
 
-.card1 {
+.weather-condition{
   position: relative;
-  font-size: 30px;
-}
-
-.card-img-top1{
-  font-size: 40px;
-}
-
-.carousel-slide {
-  position: relative;
-  bottom: 88px;
-  left: 300px;
-  max-width: 200px;
-}
-
-.weekly-forecast{
-  position: relative;
-  left: 900 px;
+  left: 200px;
+  bottom: 110px;
 }
