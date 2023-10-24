@@ -5,22 +5,22 @@ body {
 
 h1 {
   color: #866ec7;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 h2 {
-position: relative;
-right: 250px;
-left: 20px;
-color: #bc99c5;
-padding-top: 35px;
-padding-bottom: 15px;
+  max-width: 200px;
+  position: relative;
+  right: 250px;
+  left: 25px;
+  color: #bc99c5;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
-h4{
-  color: black;
+h3 {
   position: relative;
-  left: 25px;
+  left: 15px;
 }
 
 ul {
@@ -34,13 +34,28 @@ li {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #782791;
+}
+
 .weather-page {
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 30 auto;
   padding: 20;
   border:2px solid #782791 ;
-  border-radius: 15px;
+  border-radius: 50px;
   background-color: #f1c2d6;
+}
+
+.search-form {
+  border: 1px dotted #660b82;
+  border-radius: 50px;
+  padding: 20px;
 }
 
 .col-6 {
@@ -60,6 +75,7 @@ justify-content: center;
   background-color: #f2c0ff;
   border-color: #f2c0ff;
   color: #866ec7;
+  border-radius: 20px;
 }
 
 .input-group {
@@ -73,10 +89,42 @@ justify-content: center;
   background-color: #d59fe2;
   border-color: #e494f8;
   color: #866ec7;
+  border-radius: 20px;
+}
+
+.icon{
+  position: relative;
+  left: 35px;
+  width: 30px;
+}
+
+.temperature {
+  font-size: 30px;
+  position: relative;
+  left: 100px;
+  bottom: 70px;
+}
+
+.temperature .units {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  top: -10px;
+}
+
+.temperature .active {
+  color: black;
+  font-weight: bold;
+  cursor: default;
+}
+
+.temperature .active:hover{
+  text-decoration: none;
 }
 
 .weather-condition{
   position: relative;
-  left: 200px;
-  bottom: 110px;
+  left: 230px;
+  bottom: 130px;
 }

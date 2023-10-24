@@ -26,30 +26,33 @@
     </h1>
     <br>
     <form id="search-form">
-    <div class="row">
-      <div class="col">
-        <button
-        class="current-button"
-        id="current-button">
-        Current
-        </button>
-      </div>
-    <div class="col-6">
+      <div class="search-form">
+      <div class="row">
+       <div class="col">
+          <button
+            class="current-button"
+            id="current-button">
+             Current
+          </button>
+       </div>
+      <div class="col-6">
       <div class="input-group">
-        <input
-        type="search"
-        placeholder="Looking for a city?"
-        autocomplete="off"
-        autofocus="on"
-        id="city-input"/>
+          <input
+            type="search"
+            placeholder="Looking for a city?"
+            autocomplete="off"
+            autofocus="on"
+            id="city-input"/>
       </div>
       </div>
       <div class="col">
-      <input
-      class="city-search"
-      type="submit"
-      value="search"/>
-    </div>
+         <input
+            class="city-search"
+            type="submit"
+            value="search"/>
+      </div>
+      </div>
+      </div>
     </form>
         <br>
         <h2 id="current-city">
@@ -62,33 +65,35 @@
         <p class="hour" id="hour">
         </p>
         <br>
-        <div class="card1">
-            <img src="media/partly-cloud.png" 
-            class="card-img-top1" 
-            alt="Today's Weather">
-            <div class="card-body">
-              <p class="card-text">
-                <h4 <span id="temperature"></span>
-                      <a href="#" id="celsius-link">ºC</a> | 
-                      <a href="#" id="fahrenheit-link">ºF</a> 
-                </h4>
-                <div class="weather-condition">
-                <ul>
-                  <li>
-                    <strong>Humidity</strong>
-                    <span id="humidity"></span>%
-                  </li>
-                  <li>
-                    <strong>Wind</strong>
-                    <span id="wind"></span>km/h
-                  </li>
-                </ul>
-              </p>
-                </div>
-            </div>
+     <div class="row">
+     <div class="col-6">
+     <img src="media/partly-cloud.png" 
+          class="icon" 
+          alt="Today's Weather">
+        <div class="temperature">
+        <span id="temperature">15</span>
+        <span class="units">
+        <a href="#" id="celsius-link" class="active">ºC</a> | 
+        <a href="#" id="fahrenheit-link" class="">ºF</a>
+      </span>
         </div>
+     </div>
+     </div>
         <br>
-        <br>
+     <div class="col-6">
+      <div class="weather-condition">
+        <ul>
+          <li>
+            <strong>Humidity</strong>
+            <span id="humidity"></span>%
+          </li>
+          <li>
+            <strong>Wind</strong>
+            <span id="wind"></span>km/h
+          </li>
+        </ul>
+      </div>
+     </div> 
    <footer>
       <p>
         <center>
