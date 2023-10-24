@@ -23,6 +23,13 @@ h3 {
   left: 15px;
 }
 
+h4{
+  position: relative;
+  left: 25px;
+  bottom: 60px;
+  text-transform: capitalize;
+  font-style: italic;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -92,6 +99,10 @@ justify-content: center;
   border-radius: 20px;
 }
 
+.current-weather{
+  position: relative;
+  bottom: 40px;
+}
 .icon{
   position: relative;
   left: 35px;

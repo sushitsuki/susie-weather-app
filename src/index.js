@@ -19,6 +19,7 @@ function formatDate(date) {
 
 function displayWeather(response) {
   let cityElement = document.querySelector("#current-city");
+  let descriptionElement = document.querySelector("#description");
   let temperatureElement = document.querySelector("#temperature");
   let humidityElement = document.querySelector("#humitidy");
   let windElement = document.querySelector ("#wind");
@@ -26,6 +27,7 @@ function displayWeather(response) {
   celsiusTemperature = response.data.main.temp;
 
   cityElement.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   humidityElement.innerHTML = Math.round(response.data.main.humidity);
   windElement.innerHTML = Math.round(response.data.wind.speed * 3.6);
