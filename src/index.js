@@ -42,7 +42,7 @@ function displayForecast(response){
   forecast.forEach(function (forecastDay, index) {
     if (index < 4) {
   forecastHTML = forecastHTML + `
-    <div class="col-2">
+    <div class="col-4">
       <div class="weekly-forecast-date">${formatDay(forecastDay.dt)}</div>
       <img
         src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"

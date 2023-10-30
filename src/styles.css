@@ -4,8 +4,10 @@ body {
 }
 
 h1 {
-  color: #866ec7;
+  text-shadow: 2px 0px 12px rgba(247, 157, 255, 1);
+  color: #f79dff;
   padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 h2 {
@@ -13,7 +15,8 @@ h2 {
   position: relative;
   right: 250px;
   left: 25px;
-  color: #bc99c5;
+  text-shadow: 2px 0px 12px rgba(187, 6, 203, 1);
+  color: #bb06cb;
   padding-top: 30px;
   padding-bottom: 15px;
 }
@@ -21,6 +24,7 @@ h2 {
 h3 {
   position: relative;
   left: 15px;
+  padding-bottom: 25px;
 }
 
 h4{
@@ -50,18 +54,25 @@ a:hover{
   color: #782791;
 }
 
+footer{
+  position: relative;
+  bottom: 200px;
+}
+
 .container-fluid {
-  max-width: 1500px;
+  max-width: 700px;
+  max-height: 1000px;
   margin: 30 auto;
   padding: 20;
-  border:2px solid #782791 ;
+  border:2px dotted #782791 ;
   border-radius: 50px;
-  background-color: #f1c2d6;
+  background: radial-gradient(circle at 32.2% 83.5%, rgb(239, 167, 167) 0%, rgb(215, 123, 191) 90%);
 }
 
 .search-form {
   border: 1px dotted #660b82;
   border-radius: 50px;
+  box-shadow: 0px 0px 20px 19px rgba(154, 18, 115, 0.2);
   padding: 20px;
 }
 
@@ -81,6 +92,7 @@ justify-content: center;
 .current-button {
   background-color: #f2c0ff;
   border-color: #f2c0ff;
+  box-shadow: 0px 0px 20px 19px rgba(253, 6, 208, 0.2);
   color: #866ec7;
   border-radius: 20px;
 }
@@ -95,6 +107,7 @@ justify-content: center;
 .city-search {
   background-color: #d59fe2;
   border-color: #e494f8;
+  box-shadow: 0px 0px 20px 19px rgba(255, 0, 180, 0.2);
   color: #866ec7;
   border-radius: 20px;
 }
@@ -109,6 +122,7 @@ justify-content: center;
   left: 30px;
   width: 80px;
   height: 80px;
+  padding: 10px;
 }
 
 .temperature {
