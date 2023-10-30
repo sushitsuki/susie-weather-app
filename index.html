@@ -3,137 +3,115 @@
   <head>
     <title>Suse's weather page</title>
     <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=PT+Sans&family=Shantell+Sans:wght@300&display=swap" 
-          rel="stylesheet">
-    <link rel="stylesheet" 
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-          crossorigin="anonymous">
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=PT+Sans&family=Shantell+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
 
   <body>
-  <div class="container">
-  <div class="weather-page">
-    <h1>
-      <center>
-      The Weather App
-      </center>
-    </h1>
-    <br>
-    <form id="search-form">
-      <div class="search-form">
-      <div class="row">
-       <div class="col">
-          <button
-            class="current-button"
-            id="current-button">
-             Current
-          </button>
-       </div>
-      <div class="col-6">
-      <div class="input-group">
-          <input
-            type="search"
-            placeholder="Looking for a city?"
-            autocomplete="off"
-            autofocus="on"
-            id="city-input"/>
-      </div>
-      </div>
-      <div class="col">
-         <input
-            class="city-search"
-            type="submit"
-            value="search"/>
-      </div>
-      </div>
-      </div>
-    </form>
-        <br>
-        <h2 id="current-city">
-        </h2>
-        <br>
-        <h3 id="date">
-          Thursday,oct 19
-        </h3>
-        <br>
-        <p class="hour" id="hour">
-        </p>
-        <br>
-      <h4>
-        <span id="description">
-          <i>Windy</i>
-        </span>
-      </h4>
-     <br>
-     <div class="current-weather">
-     <div class="row">
-     <div class="col-6">
-     <img src="media/partly-cloud.png" 
-          class="icon" 
-          alt="Today's Weather">
-        <div class="temperature">
-        <span id="temperature">15</span>
-        <span class="units">
-        <a href="#" id="celsius-link" class="active">ºC</a> | 
-        <a href="#" id="fahrenheit-link" class="">ºF</a>
-      </span>
-        </div>
-     </div>
-     </div>
-        <br>
-     <div class="col-6">
-      <div class="weather-condition">
-        <ul>
-          <li>
-            <strong>Humidity</strong>
-            <span id="humidity"></span>%
-          </li>
-          <li>
-            <strong>Wind</strong>
-            <span id="wind"></span>km/h
-          </li>
-        </ul>
-      </div>
-      <div class="weekly-forecast">
-        <div class="row">
-          <div class="col-2">
-            <h2>
-              Forecast
-            </h2>
-            <div class="weekly-forecast-date">
-              Monday
+    <div class="container-fluid">
+      <div class="weather-page">
+        <h1>
+          <center>The Weather App</center>
+        </h1>
+        <br />
+        <form id="search-form">
+          <div class="search-form">
+            <div class="row">
+              <div class="col">
+                <button class="current-button" id="current-button">
+                  Current
+                </button>
+              </div>
+              <div class="col-6">
+                <div class="input-group">
+                  <input
+                    type="search"
+                    placeholder="Looking for a city?"
+                    autocomplete="off"
+                    autofocus="on"
+                    id="city-input"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <input class="city-search" type="submit" value="search" />
+              </div>
             </div>
-            <img
-              src="media/rainy.png"
-              alt=""
-              />
-            <div class="weekly-forecast-temperatures">
-              <span class="weekly-forecast-temperature-max">20º</span>
-              <span class="weekly-forecast-temperature-min">11º</span>
+          </div>
+        </form>
+        <br />
+        <h2 id="current-city"></h2>
+        <br />
+        <h3 id="date">Thursday,oct 19</h3>
+        <br />
+        <p class="hour" id="hour"></p>
+        <br />
+        <h4>
+          <span id="description">
+            <i>Windy</i>
+          </span>
+        </h4>
+        <br />
+        <div class="current-weather">
+          <div class="row">
+            <div class="col-6">
+              <img src="" class="icon" id="icon" alt="Today's Weather" />
+              <div class="temperature">
+                <span id="temperature">15</span>
+                <span class="units">
+                  <a href="#" id="celsius-link" class="active">ºC</a> |
+                  <a href="#" id="fahrenheit-link" class="">ºF</a>
+                </span>
+              </div>
             </div>
-          </div>          
+          </div>
+          <br />
+          <div class="col-6">
+            <div class="weather-condition">
+              <ul>
+                <li>
+                  <strong>Humidity</strong>
+                  <span id="humidity"></span>%
+                </li>
+                <li>
+                  <strong>Wind</strong>
+                  <span id="wind"></span>km/h
+                </li>
+              </ul>
+            </div>
+            <div class="weekly-forecast" id="forecast">
+              <h2>Forecast</h2>
+            </div>
+          </div>
         </div>
+        <footer>
+          <p>
+            <center>
+              <a href="https://github.com/sushitsuki/susie-weather-app">
+                Open-Source Code
+              </a>
+              by Suse Ferreira
+            </center>
+          </p>
+        </footer>
       </div>
-     </div> 
     </div>
-   <footer>
-      <p>
-        <center>
-          <a href="https://github.com/sushitsuki/susie-weather-app"> Open-Source Code </a> by Suse Ferreira
-        </center>
-      </p>
-   </footer> 
-  </div>
-  </div>
-  <script src="src/index.js"></script>
+    <script src="src/index.js"></script>
   </body>
-
 </html>
